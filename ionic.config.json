@@ -1,0 +1,7 @@
+{
+  "name": "aidento",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
