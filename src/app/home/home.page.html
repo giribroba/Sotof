@@ -1,26 +1,45 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Calen
+    <ion-title align="center">
+      Sotof
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <img src="./Folha.png"/>
-  <div id="addButton">
 
+  <div id="slides">
     <ion-slides>
       <ion-slide>
-        <img src="/src/app/home/Folha.png"/>
+        <div id= "inicio" align="center">
+          <ion-img src="/assets/img/Folha.png"></ion-img>
+          <p>Arraste para a esquerda</p>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div align="center">
+          <ion-img src="assets/img/Folha.png" id="login-img"></ion-img>
+
+          <ion-card>
+            <ion-card-content>
+
+              <ion-item>
+                <ion-input type="email" placeholder="Email"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input type="password" placeholder="Senha"></ion-input>
+              </ion-item>
+            
+            </ion-card-content>
+          </ion-card>
+
+          <ion-button color="primary">Entrar</ion-button>
+          <ion-button color="secondary">Criar</ion-button>
+        </div>
       </ion-slide>
     </ion-slides>
-
-    <!-- <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-      <ion-fab-button>
-        <ion-icon name="add"></ion-icon>
-      </ion-fab-button>
-    </ion-fab> -->
   </div>
 
 </ion-content>
+
